@@ -9,7 +9,7 @@ const MarketPlaceLinks = ({ id }: { id: string }) => {
 				<>
 					<a
 						className="text-gray-600 dark:text-gray-300 flex flex-row items-center rounded-md hover:bg-gray-100  dark:hover:bg-gray-700 border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-600 px-3 py-1.5 border transition-colors text-xs xs:text-base ease-in-out opacity-90 shadow-sm"
-						href={`https://minted.network/collections/cronos/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}/${id}`}
+						href={`https://minted.network/collections/cronos/0x219bd84e44be4d08289be20349d94f84b4185667/${id}`}
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 					>
@@ -17,12 +17,12 @@ const MarketPlaceLinks = ({ id }: { id: string }) => {
 							<span className="mr-2">
 								<OpenSeaIcon />
 							</span>
-							OpenSea
+							Minted
 						</div>
 					</a>
 					<a
 						className="text-gray-600 dark:text-gray-300 flex flex-row items-center rounded-md hover:bg-gray-100  dark:hover:bg-gray-700 border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-600 px-3 py-1.5 border transition-colors text-xs xs:text-base ease-in-out opacity-90 shadow-sm"
-						href={`https://app.ebisusbay.com/collection/scarecro-fright-society/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}:${id}`}
+						href={`https://app.ebisusbay.com/collection/scarecro-fright-society/${id}`}
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 					>
@@ -35,19 +35,19 @@ const MarketPlaceLinks = ({ id }: { id: string }) => {
 					</a>
 					<a
 						className="text-gray-600 dark:text-gray-300 flex flex-row items-center rounded-md hover:bg-gray-100  dark:hover:bg-gray-700 border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-600 px-3 py-1.5 border transition-colors text-xs xs:text-base ease-in-out opacity-90 shadow-sm"
-						href={`https://etherscan.io/token/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}?a=${id}`}
+						href={`https://cronoscan.com/token/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}?a=${id}`}
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 					>
 						<div className="flex items-center">
 							<span className="mr-2">
 								<Image
-									src="/etherscan-logo-circle.png"
+									src="/cro.png"
 									width="20px"
 									height="20px"
 								/>
 							</span>
-							Etherscan
+							cronoscan
 						</div>
 					</a>
 				</>
