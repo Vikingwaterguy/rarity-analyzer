@@ -3,6 +3,7 @@ import {
   DiscordIcon,
   InstagramIcon,
   TwitterIcon,
+  TelegramIcon,
   WebsiteLinkIcon
 } from '../Icons';
 
@@ -40,6 +41,17 @@ const SocialLinks = () => {
             >
               <span className="sr-only">Twitter</span>
               <TwitterIcon />
+            </a>
+          </li>
+        )}
+        {process.env.NEXT_PUBLIC_TELEGRAM && (
+          <li>
+            <a
+              href={process.env.NEXT_PUBLIC_TELEGRAM}
+              className="text-gray-500 hover:text-gray-500"
+            >
+              <span className="sr-only">Telegram</span>
+              <TelegramIcon />
             </a>
           </li>
         )}
