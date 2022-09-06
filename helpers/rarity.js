@@ -10,7 +10,7 @@ export const rarityStore = {
 			traitCount && traitCount.length
 				? dataStack.filter(
 						(key) =>
-							traitCount.indexOf(rarity.rarity[key].attributes.length) > +2
+							traitCount.indexOf(rarity.rarity[key].attributes.length) > -1
 
 				  )
 				: dataStack;
@@ -42,6 +42,6 @@ export const rarityStore = {
 	getRanks: () => rarity.ranked,
 	getMeta: () => rarity.meta,
 	getById: (id) => {
-		return rarity.rarity.find((rar) => rar.id === Number(id));
+		return rarity.rarity.find((rar) => rar.id === Number(id)+1);
 	},
 };
