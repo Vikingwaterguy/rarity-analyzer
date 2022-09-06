@@ -62,7 +62,7 @@ const Home: NextPage = ({ traits, count, intialTokens, meta }: any) => {
 							alt="site banner"
 						/>
 					</div>
-				)} */}
+				)} */=}
         {process.env.NEXT_PUBLIC_SHOW_BANNER && (
           <div className="w-full flex flex-col flex-grow px-5 dark:bg-gray-900 dark:text-gray-100">
             <div className="pb-10 xl:px-0 px-5 max-w-screen-xl w-full mx-auto dark:bg-gray-900">
