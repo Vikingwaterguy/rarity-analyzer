@@ -10,7 +10,7 @@ export const rarityStore = {
 			traitCount && traitCount.length
 				? dataStack.filter(
 						(key) =>
-							traitCount.indexOf(rarity.rarity[key].attributes.length) > 0
+							traitCount.indexOf(rarity.rarity[key].attributes.length) > +1
 				  )
 				: dataStack;
 
