@@ -107,7 +107,7 @@ export default async function handler(
               content: rarity
                 ? `**${NEXT_PUBLIC_SITENAME} ${
                     process.env.NEXT_PUBLIC_COLLECTION_TOKEN
-                      ? `[#${rarity.id}](https://opensea.io/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}/${rarity.id} "Opensea link")`
+                      ? `[#${rarity.id}](https://minted.network/collections/cronos/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}/${rarity.id} "Minted link")`
                       : `#${rarity.id}`
                   }**
 ------------------------------

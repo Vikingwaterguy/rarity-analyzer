@@ -9,13 +9,13 @@ const MarketPlaceLinks = ({ id }: { id: string }) => {
 				<>
 					<a
 						className="text-gray-600 dark:text-gray-300 flex flex-row items-center rounded-md hover:bg-gray-100  dark:hover:bg-gray-700 border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-600 px-3 py-1.5 border transition-colors text-xs xs:text-base ease-in-out opacity-90 shadow-sm"
-						href={`https://minted.network/collections/cronos/0x219bd84e44be4d08289be20349d94f84b4185667/${id}`}
+						href={`https://minted.network/collections/cronos/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}/${id}`}
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 					>
 						<div className="flex items-center">
 							<span className="mr-2">
-								<OpenSeaIcon />
+							<Image src="/minted.png" width="20px" height="20px" />
 							</span>
 							Minted
 						</div>
@@ -35,7 +35,7 @@ const MarketPlaceLinks = ({ id }: { id: string }) => {
 					</a>
 					<a
 						className="text-gray-600 dark:text-gray-300 flex flex-row items-center rounded-md hover:bg-gray-100  dark:hover:bg-gray-700 border-gray-300 bg-white dark:bg-gray-800 dark:border-gray-600 px-3 py-1.5 border transition-colors text-xs xs:text-base ease-in-out opacity-90 shadow-sm"
-						href={`https://cronoscan.com/token/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}?a=${id}`}
+						href={`https://cronoscan.com/token/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN} `}
 						target="_blank"
 						rel="noopener noreferrer nofollow"
 					>
