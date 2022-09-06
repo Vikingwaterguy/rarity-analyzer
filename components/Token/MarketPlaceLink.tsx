@@ -1,6 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
-import { OpenSeaIcon } from "../Icons";
+/*import { minted } from "../Icons";*/
 
 const MarketPlaceLinks = ({ id }: { id: string }) => {
 	return (
