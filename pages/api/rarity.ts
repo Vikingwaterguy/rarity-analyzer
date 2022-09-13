@@ -107,7 +107,7 @@ export default async function handler(
               content: rarity
                 ? `**${NEXT_PUBLIC_SITENAME} ${
                     process.env.NEXT_PUBLIC_COLLECTION_TOKEN
-                      ? `[#${rarity.id}](https://minted.network/collections/cronos/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}/${rarity.id} "Minted link")`
+                      ? `[#${rarity.id}](https://tofunft.com/nft/bsc/${process.env.NEXT_PUBLIC_COLLECTION_TOKEN}/${rarity.id} "TOFU link")`
                       : `#${rarity.id}`
                   }**
 ------------------------------
