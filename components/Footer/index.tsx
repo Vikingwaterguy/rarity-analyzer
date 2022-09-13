@@ -8,7 +8,7 @@ const Header = () => {
 			<footer className="max-w-screen-xl w-full mx-auto xl:px-0 px-5">
 				<div className="space-x-6 py-6 text-xs w-full flex items-center md:justify-end justify-center text-gray-500 dark:text-gray-300">
 					<div>
-						Built upon the Punkscapes rarity tool for SCFS
+						Forked From Punkscapes Raritytool
 					</div>
 					<div className="flex items-center justify-center space-x-1">
 						<DarkMode />
